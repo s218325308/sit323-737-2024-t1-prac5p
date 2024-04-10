@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <!-- Calculator form for user input -->
+    <form id="calculatorForm">
+        <!-- Input field for the first value -->
+        <input type="text" id="value1" placeholder="Enter value 1" required>
+        <!-- Dropdown menu for selecting the operation -->
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+            <option value="exponentiation">^</option> <!-- Exponentiation -->
+            <option value="squareRoot">√</option> <!-- Square Root -->
+            <option value="modulo">%</option> <!-- Modulo -->
+        </select>
+        <!-- Input field for the second value -->
+        <input type="text" id="value2" placeholder="Enter value 2" required>
+        <!-- Button to submit the form and perform the calculation -->
+        <button type="submit">Calculate</button>
+    </form>
+
+    <!-- Container to display the result or error message -->
+    <div id="result"></div>
+
+    <!-- Script file containing the JavaScript code for calculator operations -->
+    <script src="calculatorOperation.js"></script>
+
+    <script>
+        // Get reference to the operation select element
+        const operationSelect = document.getElementById('operation');
+        // Get reference to the value2 input field
+        const value1Input = document.getElementById('value1');
+
+        // Add event listener to the operation select element
+        operationSelect.addEventListener('change', function() {
+            // Check if the selected operation is "Square Root"
+            if (this.value === 'squareRoot') {
+                // Disable the value2 input field
+                value1Input.disabled = true;
+            } else {
+                // Enable the value2 input field for all other operations
+                value1Input.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

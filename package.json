@@ -1,0 +1,16 @@
+{
+  "name": "4.2c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "advCalculatorWLogger.js",
+  "scripts": {
+    "test": "node advCalculatorWLogger.js"
+  },
+  "keywords": [],
+  "author": "Andrew Duffy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "winston": "^3.13.0"
+  }
+}

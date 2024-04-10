@@ -1,0 +1,16 @@
+{"level":"info","message":"Parameters 12 and 15 received for multiplication","service":"calculate-service"}
+{"level":"info","message":"Parameters 12 and 15 received for addition","service":"calculate-service"}
+{"level":"info","message":"Parameters 5 and 5 received for exponentiation","service":"calculate-service"}
+{"level":"info","message":"Parameters 2 and 2 received for exponentiation","service":"calculate-service"}
+{"level":"info","message":"Parameters 15 and 5 received for addition","service":"calculate-service"}
+{"level":"info","message":"Parameters 2 and 25 received for squareRoot","service":"calculate-service"}
+{"level":"info","message":"Parameters and 25 received for squareRoot","service":"calculate-service"}
+{"level":"info","message":"Parameters 2 and 25 received for multiplication","service":"calculate-service"}
+{"level":"info","message":"Parameters and 25 received for squareRoot","service":"calculate-service"}
+{"level":"info","message":"Parameters 2 and 25 received for modulo","service":"calculate-service"}
+{"level":"info","message":"Parameters 3000 and 25 received for modulo","service":"calculate-service"}
+{"level":"info","message":"Parameters 3000 and 50000 received for modulo","service":"calculate-service"}
+{"level":"info","message":"Parameters 17 and 5 received for modulo","service":"calculate-service"}
+{"level":"info","message":"Parameters and 25 received for squareRoot","service":"calculate-service"}
+{"level":"info","message":"Parameter25 received for squareRoot","service":"calculate-service"}
+{"level":"info","message":"Parameters 10 and 10 received for addition","service":"calculate-service"}
