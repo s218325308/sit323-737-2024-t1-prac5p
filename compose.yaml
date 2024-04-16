@@ -1,9 +1,39 @@
-version: "3"
+#version: "3"
+#services:
+#  app:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    restart: always
+#    ports:
+#     - 3040:3040
+
+#Below based on week 6 workshop. Above was my attempt prior to workshop
+
+version: "3.8"
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    restart: always
+    build: .
+    image: s218325308/task5.1p-app:1.1.2
     ports:
-      - 3040:3040
+      - "3040:3040"
+    environment:
+      - PORT=3040
+    container_name: my-app
+    networks:
+      - my-net
+
+  app1:
+    build: .
+    image: s218325308/task5.1p-app:1.1.2
+    ports:
+      - "3041:3040"
+    environment:
+      - PORT=3040
+    container_name: my-app1
+    networks:
+      - my-net
+
+networks:
+  my-net:
+    driver: bridge
